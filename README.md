@@ -4,7 +4,7 @@
 
 ## Goal
 
-* Going one step back, lets put to good use that NFS server that you have created.
+* Going one step back, let's put to good use that NFS server that you have created.
 * We will use the NFS share as Persistent Volume and we will create a StorageClass in order bring automation to the process.
 
 ## Prerequisites
