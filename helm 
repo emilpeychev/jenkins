@@ -1,0 +1,9 @@
+helm install nfs-devops-tools nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
+--namespace=devops-tools \
+--set nfs.server=pi3-00.local \
+--set nfs.path=/mnt/nfs/devops-tools \
+--set storageClass.name=devops-tools \
+--set storageClass.defaultClass=true \
+--set storageClass.reclaimPolicy=Delete \
+--set storageClass.provisionerName=devops-tools/nfs-subdir-external-provisioner \
+--set storageClass.allowVolumeExpansion=true
