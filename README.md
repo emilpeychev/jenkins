@@ -21,7 +21,7 @@ helm repo add nfs-subdir-external-provisioner https://kubernetes-sigs.github.io/
 
 Let's take full advantage of Helm capabilities to set the namespace and other parameters for our StorageClass. Note that the defaultClass=true setting will make the new StorageClass the default for the devops-tools namespace. This means that every Persistent Volume claim made in the namespace will use this StorageClass as the default, unless specified otherwise. Adjust the nfs.server value according to the hostname of your NFS server.
 
-* Nb! pi3-00.local is the hostname of my nfs server an you need to adjust accordingly.
+* Nb! pi3-00.local is the hostname of my nfs server and you need to adjust accordingly.
 
 ```
 helm install nfs-devops-tools nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
