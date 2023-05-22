@@ -62,7 +62,7 @@ kubectl get svc jenkins-service --namespace=devops-tools
 ls -l /mnt/nfs/devops-tools/devops-tools-jenkins-pv-claim-pvc-6efb861c-.../war/
 ```
 
-* Jenkins server should be running on <Worker-node IP:32000>.
+* Jenkins server should be running on `Worker-node IP:32000`.
 * You will be asked for the token. To get the token use:
 
 ```
