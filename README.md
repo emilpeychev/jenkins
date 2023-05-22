@@ -37,7 +37,8 @@ helm install nfs-devops-tools nfs-subdir-external-provisioner/nfs-subdir-externa
 
 * Check the result with
 
-```kubectl get pods --namespace=devops-tools
+```
+kubectl get pods --namespace=devops-tools
 ```
 
 ## Deploy Jenkins
